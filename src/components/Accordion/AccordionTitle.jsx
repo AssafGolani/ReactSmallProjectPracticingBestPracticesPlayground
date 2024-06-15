@@ -1,5 +1,7 @@
 import { useAccordionContext } from './Accordion';
-export default function AccordionItem({id, className, children}){
+import { useAccordionItemContext } from './AccordionItem';
+export default function AccordionItem({ className, children}){
+    const id = useAccordionItemContext();
     const { toggleItem } = useAccordionContext();
     return <h3 className={className} onClick={() => toggleItem(id)}>{children}</h3>
 }
