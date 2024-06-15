@@ -64,7 +64,7 @@ function App() {
     </section>
     <section>
       <SearchableList items={PLACES} />
-      <SearchableList items={["ITEM1 1", "ITEM 2"]} />
+      <SearchableList items={["ITEM 1", "ITEM 2"]} />
     </section>
   </main>;
 }
